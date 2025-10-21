@@ -1,0 +1,31 @@
+{
+    "id": null,
+    "uid": "pocdash",
+    "title": "Embed PoC Dashboard",
+    "schemaVersion": 39,
+    "version": 1,
+    "time": {
+        "from": "now-6h",
+        "to": "now"
+    },
+    "refresh": "5s",
+    "panels": [
+        {
+            "id": 1,
+            "type": "timeseries",
+            "title": "Random walk (TestData)",
+            "gridPos": {
+                "h": 9,
+                "w": 24,
+                "x": 0,
+                "y": 0
+            },
+            "targets": [
+                {
+                    "refId": "A",
+                    "scenarioId": "random_walk"
+                }
+            ]
+        }
+    ]
+}
